@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="60dp"
+    tools:context=".MainActivity">
+    
+    
+    <ImageView
+        android:src="@drawable/logo"
+        android:id="@+id/imgLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+
+    <EditText
+        android:layout_below="@id/imgLogo"
+        android:layout_margin="16dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/edtUsername"
+        android:hint="Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+
+        android:layout_margin="16dp"
+        android:layout_below="@+id/edtUsername"
+        android:id="@+id/edtPassword"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+
+        android:layout_margin="16dp"
+        android:layout_below="@+id/edtPassword"
+        android:text="Login"
+        android:id="@+id/btnLogin"
+        android:onClick="openListScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+
+        android:layout_margin="16dp"
+        android:layout_below="@+id/btnLogin"
+        android:text="Remember password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
